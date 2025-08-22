@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>RER Online — Brawler</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Phaser depuis CDN (aucune install requise) -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+
+  <!-- Contrôles tactiles -->
+  <div class="controls">
+    <button class="btn" data-dir="left">◀︎</button>
+    <button class="btn" data-dir="up">▲</button>
+    <button class="btn" data-dir="down">▼</button>
+    <button class="btn" data-dir="right">▶︎</button>
+    <button class="btn wide" data-act="attack">A</button>
+    <button class="btn wide" data-act="jump">B</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
