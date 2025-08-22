@@ -1,0 +1,16 @@
+html,body{margin:0;height:100%;background:#0d0f1a;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto}
+#game{position:fixed;inset:0}
+canvas{display:block;margin:auto;touch-action:none}
+
+.controls{
+  position:fixed;left:0;right:0;bottom:0;
+  display:grid;grid-template-columns:repeat(6,1fr);gap:.5rem;
+  padding:.75rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,.5));
+}
+.btn{
+  font-size:1.1rem;padding:.75rem 0;border:1px solid #555;border-radius:.6rem;
+  background:#1e2235;color:white;backdrop-filter:blur(6px)
+}
+.btn:active{transform:scale(.98)}
+.wide{grid-column:span 1}
+@media(min-width:720px){ .wide{grid-column:span 2} }
